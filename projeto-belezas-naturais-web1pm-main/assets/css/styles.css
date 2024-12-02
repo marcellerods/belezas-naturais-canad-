@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+
+    height: 100vh;
+    background-color: #716a65;
+    background-image: linear-gradient(90deg, #716a65 0%, #e6092b 100%);
+
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px 0px 50px;
+    width: 100%;
+
+}
+
+.logo {
+    height: 110px;
+    border-radius: 6px;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    transition: transform 0.5s;
+   
+}
+
+
+nav a:active{
+    color: #db1515;
+    transition: .7s;
+}
+
+.img-canadense {
+    object-fit: cover;
+    max-width: 500px;
+    height: auto;
+    border-radius: 35px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ffffff;
+
+
+}
+
+h2 {
+    color: #e0e0e0;
+    font-weight: 400;
+    margin-bottom: 40px;
+    width: 665px;
+}
+
+p {
+    color: #ffffff;
+    text-align: left;
+
+    max-width: 665px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+/* Visão Geral*/
+
+.img-beleza-geral {
+    object-fit: cover;
+    max-width: 500px;
+    height: auto;
+    border-radius: 35px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+}
+
+/* Belezas Naturais*/
+#main {
+    display: flex;
+   flex-wrap: wrap;
+   gap: 26px;
+}
+
+.h1-belezas-naturais, .h1-curiosidades {
+text-align: center;
+}
+
+/* .img-naturais {
+    height: 300px;
+    border-radius: 35px;
+    box-shadow: rgba(0, 0, 0, 0.932) 0px 5px 15px;
+} */
+.h2-parques {
+    width: 500px;
+    margin-bottom: 0;
+}
+.paragrafo-naturais{
+    width: 500px;
+    text-align: center;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+/* pagina de curisidades */
+
+.container-curiosidades {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 150px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.h2-curiosidades{
+    margin: 0;
+}
+
+.img-curiosidades {
+    height: 440px;
+    border-radius: 35px;
+    box-shadow: rgba(0, 0, 0, 0.932) 0px 5px 15px;
+}
+ul{
+    list-style-type: none;
+    margin: 20px 0px;
+}
+li {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    text-align: justify;
+    
+}
+
+.mapa {
+    font-size: 19px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 5px 20px;
+    
+}
+.mapa:hover {
+    color: #db1515;
+    background-color: #ffff;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 5px 20px;
+    transition: .8s;
+}
+.mapa:active{
+    opacity: .8;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+nav a:hover, .mapa:hover {
+    transform: translateY(-5px);
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6);
+    transition: color 0.5s, text-shadow 0.5s, transform 0.3s;
+
+}
+
+.img-canadense, .img-naturais, .img-curiosidades {
+    object-fit: cover;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 35px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+}
+
+   details {
+    margin: 30px 0;
+    padding: 10px;
+    border: 5px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #e6092be8;
+   
+}
+
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+summary:hover {
+    text-decoration: underline;
+}
+
+
+details[open] {
+    background-color: #ffeaea46;
+    border-color: #e6092ba8;
+}
+
+details p {
+    margin-top: 10px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.text{
+color: #ffffff;
+}
+
+@media (max-width: 1325px) {
+    p{
+        max-width: 630px;
+    }
+
+    details {
+        max-width: 630px;
+    }
+} 
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .img-canadense, .img-beleza-geral, .img-naturais, .img-curiosidades {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    h1, h2, p, li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .container-curiosidades {
+        padding: 0 20px;
+    }
+
+    .mapa {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    .paragrafo-naturais {
+        width: 360px;
+        text-align: center;
+    }
+    .h2-parques {
+        width: 300px;
+        margin-bottom: 0;
+    }
+ }
+
+ button {
+    color: #ffffff;
+    background-color: #C51111;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+button:hover{
+    font-size: 15px;
+    background-color: #ca2f2f;
+    transition: .5s ease-in-out;
+}
+
+button:active{
+    background-color: #ffc7c7;
+}
+
+.section-contato{
+    display: grid;
+}
+.mascara-formulario{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+.formulario-contato {
+    background-color: #ffffff;
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    border-radius: 10px;
+    top: 30%;
+    left: -300px;
+    transition: left 1s ease-in-out;
+}
